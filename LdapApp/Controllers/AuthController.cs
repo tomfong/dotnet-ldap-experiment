@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
 
 namespace LdapApp.Controllers
 {
@@ -19,7 +18,7 @@ namespace LdapApp.Controllers
         [HttpGet]
         public IActionResult TestRun()
         {
-            return Ok(String.Format("Ldap URL => LDAP://{0}:{1}", Const.LDAP_SERVER_ADDRESS, Const.LDAP_SERVER_PORT));
+            return Ok(string.Format("Ldap URL => {0}", Const.LDAP_PATH));
         }
     }
 }

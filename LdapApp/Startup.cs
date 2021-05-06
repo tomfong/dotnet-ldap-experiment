@@ -42,6 +42,7 @@ namespace LdapApp
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "LdapApp v1"));
+                app.UseBrowserLink();
             }
 
             app.UseHttpsRedirection();

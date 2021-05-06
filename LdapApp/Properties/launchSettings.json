@@ -24,10 +24,7 @@
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "LDAP_SERVER_ADDRESS": "localhost",
-        "LDAP_SERVER_PORT": "50000",
-        "LDAP_SERVER_PORT_SSL": "50001"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   }

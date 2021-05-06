@@ -13,6 +13,7 @@ namespace LdapApp
     {
         public static void Main(string[] args)
         {
+            _ = DotNetEnv.Env.Load();
             CreateHostBuilder(args).Build().Run();
         }
 
