@@ -10,18 +10,18 @@ namespace LdapApp.Services
     public interface IAuthService
     {
 
-        public bool AuthenticateUser(string username, string password);
+        public bool AuthenticateUser(bool isSsl, string domain, string username, string password);
 
-        public bool CreateUserAccount(string username, string password, string[] commonNames, string givenName,string sn, string email);
+        public bool CreateUserAccount(bool isSsl, string domain, string username, string password, string[] commonNames, string givenName, string sn, string email);
 
-        public bool ResetUserPassword(string username, string newPassword);
+        public bool ResetUserPassword(bool isSsl, string domain, string username, string newPassword);
 
-        public bool EnableUserAccount(string username);
+        public bool EnableUserAccount(bool isSsl, string domain, string username);
 
-        public bool DisableUserAccount(string username);
+        public bool DisableUserAccount(bool isSsl, string domain, string username);
 
-        public bool LockUserAccount(string username);
+        public bool LockUserAccount(bool isSsl, string domain, string username);
 
-        public bool UnlockUserAccount(string username);
+        public bool UnlockUserAccount(bool isSsl, string domain, string username);
     }
 }
